@@ -30,5 +30,9 @@ public class LessonOne {
         int number=scan.nextInt();
         System.out.println("Number= "+number);
 
+        Scanner scan1= new Scanner(System.in);
+        String input1=scan1.nextLine();
+        System.out.println("Hello, "+input1);
+
     }
 }
