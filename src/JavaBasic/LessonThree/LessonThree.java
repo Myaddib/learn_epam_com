@@ -1,6 +1,7 @@
 package JavaBasic.LessonThree;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class LessonThree {
@@ -12,6 +13,6 @@ public class LessonThree {
 
         intNumber -= (intNumber / 86_400) * 86_400; // 24 hours a day * 60 minutes per hour *60 seconds per hour =86_400
         LocalTime conversionInTime = LocalTime.from(LocalTime.ofSecondOfDay(intNumber));
-        System.out.println(conversionInTime);
+        System.out.println(conversionInTime.format(DateTimeFormatter.ofPattern("H:mm:ss")));
     }
 }
