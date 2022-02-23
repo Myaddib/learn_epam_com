@@ -3,14 +3,15 @@ package JavaBasic.LessonThree;
 import java.util.Scanner;
 
 public class FindMaxInSeq {
-    public static void main(String[] args) {
-        System.out.println(max());
-    }
 
-    static int max() {
+    public static int max() {
         Scanner scanner = new Scanner(System.in);
-        int max = 0;
-        int number;
+        int max = scanner.nextInt();
+
+        int number = max;
+        if (max == 0) {
+            return max;
+        }
         while (scanner.hasNextInt()) {
             number = scanner.nextInt();
             if (number == 0) break;
@@ -18,4 +19,14 @@ public class FindMaxInSeq {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+
+        System.out.println("Test your code here!\n");
+
+        // Get a result of your code
+
+        System.out.println(max());
+    }
 }
+
